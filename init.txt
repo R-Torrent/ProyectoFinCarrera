@@ -1,0 +1,69 @@
+% Script para el simulador 'simPFC.exe'
+
+% Establece las condiciones de arranque de la simulación.
+
+% *** SON NECESARIOS TODOS LOS RENGLONES ***
+
+% Son modificables las siguientes condiciones iniciales:
+%	DELTA_T0: Desviación de la temperatura a nivel del mar sobre la atmósfera ISA (K)
+%	DELTA_E: Timón de profundidad (°) [-20, 20]
+%	DELTA_A: Alerones (°) [-13.75, 13.75]
+%	DELTA_R: Timón de dirección (°) [-23, 23]
+%	DELTA_WM1: Palanca de gases motor izquierdo [0, 1]
+%	DELTA_WM2: Palanca de gases motor derecho [0, 1]
+%	DELTA_NP1: Palanca de condición motor izquierdo (rpm) [900, 1200]
+%	DELTA_NP2: Palanca de condición motor derecho (rpm) [900, 1200]
+%	U: Velocidad 'x' en ejes cuerpo (ft/s)
+%	V: Velocidad 'y' en ejes cuerpo (ft/s)
+%	W: Velocidad 'z' en ejes cuerpo (ft/s)
+%	UWIND: Velocidad del viento 'x' en ejes horizonte local (ft/s)
+%	VWIND: Velocidad del viento 'y' en ejes horizonte l ocal (ft/s)
+%	WWIND: Velocidad del viento 'z' en ejes horizonte local (ft/s)
+%	P: Velocidad angular 'x' en ejes cuerpo (°/s)
+%	Q: Velocidad angular 'y' en ejes cuerpo (°/s)
+%	R: Velocidad angular 'z' en ejes cuerpo (°/s)
+%	PSI: Ángulo de guiñada (°)
+%	THETA: Ángulo de asiento (°)
+%	PHI: Ángulo de balance (°)
+%	LAMBDA: Latitud geográfica (°)
+%	MU: Longitu geográfica (°)
+%	H: Altitud (ft)
+%	WFUEL1: Peso tanque de combustible izqdo. (lb) [Máximo 5204]
+%	WFUEL2: Peso tanque de combustible drcho. (lb) [Máximo 5204]
+%	WH2O1: Peso agua embarcada en depósito izqdo. exterior (lb) [Máximo 3260] 
+%	WH2O2: Peso agua embarcada en depósito izqdo. interior (lb) [Máximo 3490]
+%	WH2O3: Peso agua embarcada en depósito drcho. interior (lb) [Máximo 3490]
+%	WH2O4: Peso agua embarcada en depósito drcho. exterior (lb) [Máximo 3260]
+
+
+% Condición inicial: 115 nudos, rumbo 000, ~500 m sobre la ETSIA
+
+DELTA_T0  0
+DELTA_E   0
+DELTA_A   0
+DELTA_R   0
+DELTA_WM1 0.5
+DELTA_WM2 0.5
+DELTA_NP1 1000
+DELTA_NP2 1000
+U	194.0981336
+V	0
+W	0
+UWIND	0
+VWIND	0
+WWIND	0
+P	0
+Q	0
+R	0
+PSI	0
+THETA	0
+PHI	0
+LAMBDA	+40.4408333
+MU	-3.725
+H	3600
+WFUEL1	500
+WFUEL2	500
+WH2O1	3260
+WH2O2	3490
+WH2O3	3490
+WH2O4	3260

@@ -1,0 +1,33 @@
+% Script para el simulador 'simPFC.exe'
+
+% Son modificables las siguientes variables durante la ejecución de la simulación:
+%	DELTA_T0: Desviación de la temperatura a nivel del mar sobre la atmósfera ISA (K)
+%	DELTA_E: Timón de profundidad (°) [-20, 20]
+%	DELTA_A: Alerones (°) [-13.75, 13.75]
+%	DELTA_R: Timón de dirección (°) [-23, 23]
+%	DELTA_WM1: Palanca de gases motor izquierdo [0, 1]
+%	DELTA_WM2: Palanca de gases motor derecho [0, 1]
+%	DELTA_NP1: Palanca de condición motor izquierdo (rpm) [900, 1200]
+%	DELTA_NP2: Palanca de condición motor derecho (rpm) [900, 1200]
+%	U: Velocidad 'x' en ejes cuerpo (ft/s)
+%	V: Velocidad 'y' en ejes cuerpo (ft/s)
+%	W: Velocidad 'z' en ejes cuerpo (ft/s)
+%	UWIND: Velocidad del viento 'x' en ejes horizonte local (ft/s)
+%	VWIND: Velocidad del viento 'y' en ejes horizonte l ocal (ft/s)
+%	WWIND: Velocidad del viento 'z' en ejes horizonte local (ft/s)
+%	P: Velocidad angular 'x' en ejes cuerpo (°/s)
+%	Q: Velocidad angular 'y' en ejes cuerpo (°/s)
+%	R: Velocidad angular 'z' en ejes cuerpo (°/s)
+%	PSI: Ángulo de guiñada (°)
+%	THETA: Ángulo de asiento (°)
+%	PHI: Ángulo de balance (°)
+%	LAMBDA: Latitud geográfica (°)
+%	MU: Longitu geográfica (°)
+%	H: Altitud (ft)
+%	WFUEL1: Peso tanque de combustible izqdo. (lb) [Máximo 5204]
+%	WFUEL2: Peso tanque de combustible drcho. (lb) [Máximo 5204]
+%	WH2O1: Peso agua embarcada en depósito izqdo. exterior (lb) [Máximo 3260] 
+%	WH2O2: Peso agua embarcada en depósito izqdo. interior (lb) [Máximo 3490]
+%	WH2O3: Peso agua embarcada en depósito drcho. interior (lb) [Máximo 3490]
+%	WH2O4: Peso agua embarcada en depósito drcho. exterior (lb) [Máximo 3260]
+
